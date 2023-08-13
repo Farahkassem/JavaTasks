@@ -1,0 +1,174 @@
+1- Check The Number Is Even or Odd
+
+-function checkEvenOrOdd(number) {
+    if (number % 2 === 0) {
+        return "Even";
+    } else {
+        return "Odd";
+    }
+}
+
+
+
+2- Fizz Buzz Game
+
+-function fizzBuzzGame() {
+    for (let i = 1; i <= 100; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+            console.log("FizzBuzz");
+        } else if (i % 3 === 0) {
+            console.log("Fizz");
+        } else if (i % 5 === 0) {
+            console.log("Buzz");
+        } else {
+            console.log(i);
+        }
+    }
+}
+
+
+
+
+3- Reverse String for example welcome => emoclew
+
+-function reverseString(str) {
+    return str.split('').reverse().join('');
+}
+
+
+
+4- Compute Circle Area and Circumference
+
+-function computeCircleProperties(radius) {
+    const area = Math.PI * radius * radius;
+    const circumference = 2 * Math.PI * radius;
+    return { area, circumference };
+}
+
+
+
+5- check two given numbers and return true if one of the number is
+50 or if their sum is 50.
+
+-function checkSumOrValue(num1, num2) {
+    return num1 === 50 || num2 === 50 || num1 + num2 === 50;
+}
+
+
+
+6- check from two given integers, whether one is positive and
+another one is negative.
+
+-function checkPositiveNegative(num1, num2) {
+    return (num1 > 0 && num2 < 0) || (num1 < 0 && num2 > 0);
+}
+
+
+
+
+7- check whether a given positive number is a multiple of 5 or a
+multiple of 8.
+
+-function checkMultipleOf5Or8(num) {
+    return num % 5 === 0 || num % 8 === 0;
+}
+
+
+
+
+8- find the largest of three given integers
+
+-function findLargest(num1, num2, num3) {
+    return Math.max(num1, num2, num3);
+}
+
+
+
+
+
+9- Compute The sum of the numbers from 1 to 10
+
+-function sumOfNumbers() {
+    let sum = 0;
+    for (let i = 1; i <= 10; i++) {
+        sum += i;
+    }
+    return sum;
+}
+
+
+
+
+
+10- display the pattern like right angle triangle using an asterisk.
+     *
+     **
+     ***
+     ****
+     *****
+
+-function printTriangle(rows) {
+    for (let i = 1; i <= rows; i++) {
+        console.log("*".repeat(i));
+    }
+}
+
+
+
+11- check whether a given number is positive or negative.
+
+-function checkPositiveNegative(number) {
+    if (number > 0) {
+        return "Positive";
+    } else if (number < 0) {
+        return "Negative";
+    } else {
+        return "Zero";
+    }
+}
+
+
+
+
+12- store elements in an array and print it.
+
+-let array = [1, 1, 2];
+console.log(array);
+
+
+
+13- print the sum of two numbers
+
+-function printSum(num1, num2) {
+    console.log("Sum:", num1 + num2);
+}
+
+
+
+14- calculate the factorial of a given number
+-function factorial(number) {
+    if (number === 0 || number === 1) {
+        return 1;
+    }
+    return number * factorial(number - 1);
+}
+
+
+
+15- Create Simple Calculator (+ , - , * , /)
+
+function calculator(num1, operator, num2) {
+    switch (operator) {
+        case "+":
+            return num1 + num2;
+        case "-":
+            return num1 - num2;
+        case "*":
+            return num1 * num2;
+        case "/":
+            return num1 / num2;
+        default:
+            return "Invalid operator";
+    }
+}
+
